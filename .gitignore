@@ -1,0 +1,32 @@
+# ─── Dependensi ───────────────────────────────────────────────
+node_modules/
+
+# ─── Data & Output (FILE BESAR / SENSITIF) ────────────────────
+# Data hasil scraping — tidak perlu masuk repo, bisa sangat besar
+*.csv
+data_penelitian.csv
+
+# File checkpoint — spesifik per sesi, tidak perlu di-commit
+last_checkpoint.json
+
+# ─── Autentikasi Facebook — SANGAT SENSITIF, JANGAN PERNAH COMMIT ──
+auth.json
+
+# ─── GraphQL Dumps & Logs — file debug/analisis sementara ────────
+sample_graphql*.json
+*.json
+!package.json
+!package-lock.json
+
+# ─── Log & Debug ──────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ─── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor ───────────────────────────────────────────────────
+.vscode/
+.idea/
