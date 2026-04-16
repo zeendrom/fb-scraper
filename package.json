@@ -1,9 +1,11 @@
 {
   "name": "fb-scraper",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Facebook Timeline Scraper untuk penelitian akademik - menggunakan Playwright + GraphQL Network Interception",
+  "main": "scraper.js",
   "scripts": {
+    "scrape": "node scraper.js",
+    "sync": "node watch-sync.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
